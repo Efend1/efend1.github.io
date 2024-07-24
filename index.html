@@ -21,19 +21,22 @@
 
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"
-                            >Profile</a
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="#home"
+                            >Beranda</a
                         >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#about">Tentang</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#projects">Proyek</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true"
-                            >Disabled</a
+                        <a class="nav-link" href="#"
+                            >Kontak</a
                         >
                     </li>
                 </ul>
@@ -42,21 +45,186 @@
 
         <!-- akhir navbar -->
 
-        <!-- profile -->
-        <div class="mt-4 container-fluid">
-            <h3 class="text-center">Profile singkat</h3>
-            <p>
-                Ad incididunt cillum ipsum Lorem in. Consequat tempor veniam
-                quis in ut in laborum occaecat officia aute. Eu excepteur
-                proident voluptate laboris cupidatat magna laboris.
-            </p>
-        </div>
+        <section
+            id="home"
+            class="d-flex align-items-center"
+            style="
+                height: 50vh;
+                background: url(&quot;path/to/image.jpg&quot;) no-repeat center
+                    center/cover;
+            "
+        >
+            <div class="container text-center text-white">
+                <h1>Halo, Saya [Nama Anda]</h1>
+                <p class="lead">Saya seorang [Profesi Anda]</p>
+                <a href="#projects" class="btn btn-primary"
+                    >Lihat Proyek Saya</a
+                >
+            </div>
+        </section>
+
         <!-- akhir profile -->
+        <section id="about" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Tentang Saya</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img
+                            src="path/to/your-photo.jpg"
+                            class="img-fluid rounded-circle"
+                            alt=""
+                        />
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Halo, Saya Muhammad Efendi</h3>
+                        <p>
+                            Et enim aute cupidatat ad excepteur non velit elit
+                            est. Sit dolor duis reprehenderit reprehenderit
+                            fugiat do aliquip culpa do Lorem irure. Duis dolore
+                            incididunt fugiat laborum. Dolor laboris ipsum sunt
+                            irure quis qui sit ea sunt incididunt. Tempor ad id
+                            adipisicing nostrud consectetur do adipisicing
+                            laboris aute ut anim Lorem. Duis cupidatat consequat
+                            dolore est eu commodo exercitation veniam cupidatat
+                            non aliqua culpa ut. Nisi dolor tempor proident
+                            consectetur Lorem proident laboris non. Exercitation
+                            deserunt non nostrud excepteur ex commodo cupidatat
+                            proident consequat officia. Do laboris enim aliqua
+                            aliqua do officia culpa incididunt ullamco tempor.
+                            Veniam aliquip non magna nulla elit duis non magna
+                            eu excepteur consequat. Elit nostrud nulla magna
+                            cillum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Proyek Terbaru</h2>
+                <div class="row">
+                    <!-- Project Card 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img
+                                src="path/to/project1.jpg"
+                                class="card-img-top"
+                                alt="Project 1"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Proyek 1</h5>
+                                <p class="card-text">
+                                    Elit consequat veniam laboris occaecat
+                                    laborum..
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img
+                                src="path/to/project2.jpg"
+                                class="card-img-top"
+                                alt="Project 2"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Proyek 2</h5>
+                                <p class="card-text">
+                                    Lorem ipsum Officia magna tempor commodo
+                                    consequat elit duis eu ad officia aliqua
+                                    quis magna esse..
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img
+                                src="path/to/project3.jpg"
+                                class="card-img-top"
+                                alt="Project 3"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Proyek 3</h5>
+                                <p class="card-text">
+                                    lorem ipsum Pariatur officia minim ullamco
+                                    nostrud..
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     <!--   <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Kontak</h2>
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Nama</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Pesan</label>
+                                <textarea
+                                    class="form-control"
+                                    id="message"
+                                    rows="5"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Kirim
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <footer class="bg-dark text-white py-4">
+            <div class="container text-center">
+                <p>&copy; 2024 Muhammad Efendi. All Rights Reserved.</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" class="text-white">Facebook</a>
+                        <a href="#" class="text-white">Facebook</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-white">Twitter</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-white">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
 
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"
         ></script>
+        <script src="script.js.js" type="text/javascript" charset="utf-8"></script>
     </body>
 </html>
